@@ -8,7 +8,7 @@
 int main(void)
 {
 int lowerCase = 97;
-int upperCase = 65
+int upperCase = 65;
 while (lowerCase <= 122)
 {
 	putchar(num);
