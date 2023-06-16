@@ -11,13 +11,13 @@ int lowerCase = 97;
 int upperCase = 65;
 while (lowerCase <= 122)
 {
-	putchar(num);
-	num++;
+	putchar(lowerCase);
+	lowerCase++;
 }
 while (upperCase <= 90)
 {
-	putchar(num);
-	num++;
+	putchar(upperCase);
+	upperCase++;
 }
 putchar('\n');
 return (0);
