@@ -6,7 +6,7 @@
  *
  * Description: function that checks for lowercase character.
  *
- * Return: 1 if c is lowercase or 0 otherwise
+ * Return: 1 if c is lowercase or 0 otherwise.
  */
 int _islower(int c)
 {
