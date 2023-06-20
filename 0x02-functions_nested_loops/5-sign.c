@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  _isalpha - function name
+ *  print_sign - function name
  * @n: The character to be checked.
  *
  * Description: function that prints the sign of a number.
@@ -12,7 +12,7 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar(45);
+		_putchar(43);
 		return (1);
 	}
 	else if (n < 0)
