@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strncpy - copy a string
- * @dest: input value
- * @src: input value
- * @n: input value
+ * _strncpy - function that copies a string.
+ * @dest: param
+ * @src: para
+ * @n: param
  *
  * Return: dest
  */
