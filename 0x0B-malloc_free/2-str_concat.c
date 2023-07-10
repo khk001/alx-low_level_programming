@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * str_concat - get ends of input and add together for size
+ * str_concat - function that concatenates two strings.
  * @s1: parameter
  * @s2: parameter
  *
@@ -10,35 +10,36 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *conct;
-	int i, ci;
+	char *concat;
+	int i;
+	int j;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	i = ci = 0;
+	i = j = 0;
 	while (s1[i] != '\0')
 		i++;
-	while (s2[ci] != '\0')
-		ci++;
-	conct = malloc(sizeof(char) * (i + ci + 1));
+	while (s2[j] != '\0')
+		j++;
+	concat = malloc(sizeof(char) * (i + j + 1));
 
-	if (conct == NULL)
+	if (concat == NULL)
 		return (NULL);
-	i = ci = 0;
+	i = j = 0;
 	while (s1[i] != '\0')
 	{
-		conct[i] = s1[i];
+		concat[i] = s1[i];
 		i++;
 	}
 
-	while (s2[ci] != '\0')
+	while (s2[j] != '\0')
 	{
-		conct[i] = s2[ci];
-		i++, ci++;
+		concat[i] = s2[j];
+		i++, j++;
 	}
-	conct[i] = '\0';
-	return (conct);
+	concat[i] = '\0';
+	return (concat);
 }
